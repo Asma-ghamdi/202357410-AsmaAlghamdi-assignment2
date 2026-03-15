@@ -18,7 +18,29 @@ if (currentHour < 12) {
 
 // Display the greeting message on the webpage
 greetingElement.textContent = greetingMessage;
+// Get the theme button
+const themeButton = document.getElementById("theme-toggle");
 
+// Check if a saved theme exists
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+}
+
+// Toggle theme when button is clicked
+themeButton.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark-mode");
+
+    // Save preference
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+
+});
 
 // Get all project buttons
 const projectButtons = document.querySelectorAll(".project-button");
