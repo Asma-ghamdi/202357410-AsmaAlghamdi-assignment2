@@ -79,3 +79,21 @@ html, body {
   padding: 0;
   overflow-x: hidden;
 }
+
+.project-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.project-details {
+  margin-top: 10px;
+  display: none; /* Initially hide the project details */
+}
+
+.hover-effect:hover .project-details {
+  display: block; /* Show project details on hover */
+}
