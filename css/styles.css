@@ -152,3 +152,31 @@ section {
   color: green;
   font-size: 0.9em;
 }
+
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling for anchor links */
+}
+
+/* Style the navigation menu */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+/* Style the navigation links */
+nav a {
+  text-decoration: none;
+  color: #d1bfbf;
+  font-weight: bold;
+}
+/* Add a hover effect to navigation links */
+nav a:hover {
+  color: #0077cc;
+}
+/* Style the form message with a transition for smooth appearance */
+#form-message {
+  margin-top: 10px;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}

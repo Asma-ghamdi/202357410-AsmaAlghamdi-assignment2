@@ -24,23 +24,30 @@
         <!-- Greeting text will be added here using JavaScript -->
         <p id="greeting"></p>
         <button id="theme-toggle" aria-label="Toggle theme">Toggle Theme</button>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
     </Header>
 
     <!-- Main container for page sections -->
-    <div class="container">
+    <div class="container" id="main-content">
 
         <!-- About Me section -->
-        <div class="about">
+        <div class="about" id="about">
             <h2>About me</h2>
             <p>I am a junior computer science student who is ambitious and always working on achieving goals. I like to make a clear plan for anything I am working on and that makes me more capable of achieving goals such as academic valediction.</p>
         </div>
 
         <!-- Projects section -->
-        <div class="projects">
+        <div class="projects" id="projects">
             <h2>Projects</h2>
 
             <!-- Project 1 -->
-            <div class="project">
+            <div class="project" id="project1">
                 <h3>Project 1: Event Management System</h3>
                 <img src="assets/images/events.png" alt="Event Management System project image">
                 <button class="project-button">View Details</button>
@@ -48,7 +55,7 @@
             </div>
 
             <!-- Project 2 -->
-            <div class="project">
+            <div class="project" id="project2">
                 <h3>Project 2: Flying Stars Game</h3>
                 <img src="assets/images/star.jpg" alt="Flying Stars Game project image">
                 <button class="project-button">View Details</button>
@@ -57,7 +64,7 @@
         </div>  
 
         <!-- Contact section -->
-        <div class="contact">
+        <div class="contact" id="contact">
             <h2>Contact</h2>
               <form id="contact-form">
 
