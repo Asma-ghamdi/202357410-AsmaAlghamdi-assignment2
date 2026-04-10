@@ -102,3 +102,26 @@ filterButtons.forEach(button => {
         });
     });
 });
+
+// ---- Sort Logic ----
+let sortAscending = true;
+const sortBtn = document.getElementById('sort-btn');
+
+sortBtn.addEventListener('click', () => {
+    // Flip sort direction
+    sortAscending = !sortAscending;
+    sortBtn.textContent = sortAscending ? 'Sort:  Large → Small' : 'Sort:  Small → Large';
+
+    const projectsSection = document.querySelector('.projects');
+    const projectList = Array.from(document.querySelectorAll('.project'));
+
+    // Sort projects alphabetically by their heading
+    projectList.sort((a, b) => {
+        const nameA = a.querySelector('h3').textContent.toLowerCase();
+        const nameB = b.querySelector('h3').textContent.toLowerCase();
+        return sortAscending ? nameA.localeCompare(nameB) : nameB.localeCompare(nameA);
+    });
+
+    // Re-add sorted projects to the page
+    projectList.forEach(project => projectsSection.appendChild(project));
+});

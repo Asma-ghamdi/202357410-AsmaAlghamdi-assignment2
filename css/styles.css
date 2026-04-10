@@ -196,3 +196,24 @@ nav a:hover {
     background: #7c3aed;
     color: white;
 }
+
+/* Sort Button */
+.sort-buttons {
+    margin-bottom: 20px;
+}
+
+#sort-btn {
+    padding: 8px 18px;
+    border: 2px solid #7c3aed;
+    background: transparent;
+    color: #7c3aed;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+#sort-btn:hover {
+    background: #7c3aed;
+    color: white;
+}
